@@ -1,0 +1,42 @@
+# ═══════════════════════════════════════════════════════════════════════════
+# TECHNOLOGY REVOLUTION
+# Computing, internet, and digital technology milestones
+# ═══════════════════════════════════════════════════════════════════════════
+
+name: tech-revolution
+description: Computing and digital technology milestones (1940-2025)
+
+# Time range
+start_year: 1940
+end_year: 2025
+
+# Event limits
+max_events: 200
+min_sitelinks: 25
+
+# Categories
+categories:
+  - technology
+  - science
+  - culture
+
+# Wikidata classes
+wikidata_classes:
+  - Q17362920  # invention
+  - Q208628    # software release
+  - Q18536349  # product launch
+  - Q35127     # website
+  - Q7397      # software
+
+# Thresholds
+era_threshold_years: 10
+period_threshold_days: 365
+
+# Importance boosts
+importance_boosts:
+  Q5296: landmark     # ENIAC
+  Q844079: landmark   # ARPANET  
+  Q466: landmark      # World Wide Web
+  Q312: landmark      # Apple Inc founding
+  Q2283: landmark     # Microsoft founding
+  Q40185: landmark    # iPhone

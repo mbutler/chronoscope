@@ -1,0 +1,66 @@
+# ═══════════════════════════════════════════════════════════════════════════
+# WORLD WAR II - DETAILED
+# Comprehensive timeline of WWII events including major battles and operations
+# ═══════════════════════════════════════════════════════════════════════════
+
+name: wwii-detailed
+description: Detailed World War II timeline with battles, operations, and key moments (1939-1945)
+
+start_year: 1938
+end_year: 1946
+
+max_events: 300
+min_sitelinks: 12
+
+categories:
+  - politics
+  - technology
+  - science
+
+# Use themed mode - search for events part of WWII
+query_mode: themed
+theme_ids:
+  - Q362      # World War II
+  - Q154642   # Battle of Stalingrad (for Eastern Front events)
+  - Q184425   # Normandy landings (for Western Front events)
+
+# Category hints
+category_keywords:
+  politics:
+    - battle
+    - invasion
+    - offensive
+    - surrender
+    - treaty
+    - occupation
+    - liberation
+  technology:
+    - bomb
+    - aircraft
+    - tank
+    - submarine
+    - radar
+
+exclude_keywords:
+  - video game
+  - film
+  - movie
+  - novel
+  - album
+  - memorial
+  - museum
+  - cemetery
+
+era_threshold_years: 6
+period_threshold_days: 14
+
+importance_boosts:
+  Q184425: landmark   # D-Day
+  Q52418: landmark    # Pearl Harbor
+  Q10867: landmark    # Hiroshima
+  Q8161: landmark     # Nagasaki
+  Q154642: landmark   # Battle of Stalingrad
+  Q8007: landmark     # Battle of Britain
+  Q40160: landmark    # V-E Day
+  Q153254: landmark   # Battle of the Bulge
+  Q153701: landmark   # Battle of Midway

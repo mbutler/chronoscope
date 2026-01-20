@@ -1,111 +1,73 @@
-# Chronoscope
+# Welcome to your Lovable project
 
-An interactive historical timeline visualization tool featuring video-editing-style playback controls, dynamic zoom levels, and scholarly period definitions.
+## Project info
 
-## Overview
+**URL**: https://lovable.dev/projects/1ae28910-c815-4e55-83e5-2b6a4be61196
 
-Chronoscope displays historical events across multiple thematic layers with smooth playback animation, variable speed control, and extensive zoom capabilities. The current demo spans 125 years (1900-2025) with 35 sample events across Politics, Science, Culture, and Technology.
+## How can I edit this code?
 
-## Technical Documentation
+There are several ways of editing your application.
 
-### [SCALING_ANALYSIS.md](./SCALING_ANALYSIS.md)
-**Comprehensive technical report for scaling to cosmic timescales with millions of events**
+**Use Lovable**
 
-This 70-page analysis explores the ambitious vision of scaling Chronoscope from minutes to the age of the universe (13.8 billion years) with millions of events. Covers:
+Simply visit the [Lovable Project](https://lovable.dev/projects/1ae28910-c815-4e55-83e5-2b6a4be61196) and start prompting.
 
-- Current architecture limitations and bottlenecks
-- Custom time representation systems (BigInt-based)
-- Canvas/WebGL rendering strategies
-- Spatial-temporal indexing (R-trees)
-- Level-of-Detail (LOD) systems
-- Backend API architecture
-- 16-week phased implementation roadmap
-- Performance targets and risk assessment
+Changes made via Lovable will be committed automatically to this repo.
 
-**Use this if:** You want to build a massive-scale timeline spanning billions of years.
+**Use your preferred IDE**
 
-### [HUMAN_HISTORY_ANALYSIS.md](./HUMAN_HISTORY_ANALYSIS.md)
-**Focused analysis for a scholarly human history timeline (300,000 years)**
+If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
 
-This analysis explores a more achievable scope using the existing architecture with moderate optimizations. Covers:
+The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
 
-- **PeriodO Integration:** Using 9,001 scholarly period definitions from [perio.do](https://perio.do/)
-- **Feasible Event Count:** 25,000-50,000 curated events with current tech stack
-- **JavaScript Date Support:** Native Date objects work perfectly for human history
-- **8-10 week implementation timeline** with Canvas rendering
-- **Scholarly credibility** through authoritative period definitions
-- No custom time system or backend required
+Follow these steps:
 
-**Use this if:** You want a high-quality, scholarly timeline of human history that can be built in 2-3 months.
+```sh
+# Step 1: Clone the repository using the project's Git URL.
+git clone <YOUR_GIT_URL>
 
-## PeriodO Dataset
+# Step 2: Navigate to the project directory.
+cd <YOUR_PROJECT_NAME>
 
-The `/data/periodo-dataset.json` file contains:
-- **9,001 period definitions** from 272 scholarly sources
-- Global coverage (Near East, Europe, Americas, Asia, Africa, Oceania)
-- Hierarchical period structures with precise dates
-- Citations and bibliographic references
-- Multi-lingual support
+# Step 3: Install the necessary dependencies.
+npm i
 
-### [PERIODO_VISUAL_GUIDE.md](./PERIODO_VISUAL_GUIDE.md)
-**Visual guide to using PeriodO for timeline labeling**
-
-This guide shows exactly how PeriodO periods would appear in the timeline:
-- Visual mockups of period layers
-- Examples of competing scholarly definitions
-- How to link events to periods
-- Multi-lingual labeling strategies
-- What PeriodO provides vs. what you build
-
-**Key insight:** PeriodO gives you the **framework** (scholarly period definitions as background context), you add the **details** (specific historical events as foreground).
-
-## Current Features
-
-- ✅ Multi-layer timeline visualization
-- ✅ Play/pause with variable speed control (0.25×-4×)
-- ✅ Dynamic zoom (1×-65,536×) with adaptive time scales
-- ✅ Click-to-seek timeline navigation
-- ✅ Real-time active event tracking
-- ✅ Event information panel
-
-## Tech Stack
-
-- **React 18** + TypeScript
-- **Vite** build tool
-- **Tailwind CSS** styling
-- **Radix UI** + shadcn/ui components
-- **date-fns** date manipulation
-
-## Getting Started
-
-```bash
-# Install dependencies
-npm install
-
-# Run development server
+# Step 4: Start the development server with auto-reloading and an instant preview.
 npm run dev
-
-# Build for production
-npm run build
 ```
 
-## Documentation Index
+**Edit a file directly in GitHub**
 
-### Planning & Strategy
-- [SCALING_ANALYSIS.md](./SCALING_ANALYSIS.md) - Cosmic-scale timeline architecture (billions of years, millions of events)
-- [HUMAN_HISTORY_ANALYSIS.md](./HUMAN_HISTORY_ANALYSIS.md) - Human history timeline (300,000 years, 30K events)
-- [CATEGORY_FRAMEWORKS.md](./CATEGORY_FRAMEWORKS.md) - Novel categorization systems (avoiding Euro-centrism)
+- Navigate to the desired file(s).
+- Click the "Edit" button (pencil icon) at the top right of the file view.
+- Make your changes and commit the changes.
 
-### Implementation Guides
-- [PERIODO_VISUAL_GUIDE.md](./PERIODO_VISUAL_GUIDE.md) - How to use PeriodO for scholarly period definitions
-- [DATA_ACQUISITION.md](./DATA_ACQUISITION.md) - **How to collect 30,000+ events from Wikidata, Wikipedia, and more**
+**Use GitHub Codespaces**
 
-## Next Steps
+- Navigate to the main page of your repository.
+- Click on the "Code" button (green button) near the top right.
+- Select the "Codespaces" tab.
+- Click on "New codespace" to launch a new Codespace environment.
+- Edit files directly within the Codespace and commit and push your changes once you're done.
 
-Choose your adventure:
+## What technologies are used for this project?
 
-1. **Go Big:** Follow the [SCALING_ANALYSIS.md](./SCALING_ANALYSIS.md) for cosmic-scale timelines
-2. **Stay Scholarly:** Follow the [HUMAN_HISTORY_ANALYSIS.md](./HUMAN_HISTORY_ANALYSIS.md) for authoritative human history
-3. **Get Data:** Follow the [DATA_ACQUISITION.md](./DATA_ACQUISITION.md) to collect events at scale
+This project is built with:
 
-Both paths are technically feasible—it's a question of scope and timeline.
+- Vite
+- TypeScript
+- React
+- shadcn-ui
+- Tailwind CSS
+
+## How can I deploy this project?
+
+Simply open [Lovable](https://lovable.dev/projects/1ae28910-c815-4e55-83e5-2b6a4be61196) and click on Share -> Publish.
+
+## Can I connect a custom domain to my Lovable project?
+
+Yes, you can!
+
+To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+
+Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)

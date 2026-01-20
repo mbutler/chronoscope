@@ -1,0 +1,47 @@
+# ═══════════════════════════════════════════════════════════════════════════
+# COLD WAR ERA
+# Geopolitical events during the Cold War period
+# ═══════════════════════════════════════════════════════════════════════════
+
+name: cold-war
+description: Cold War events including proxy wars, crises, and space race (1947-1991)
+
+# Time range
+start_year: 1945
+end_year: 1992
+
+# Event limits
+max_events: 250
+min_sitelinks: 25
+
+# Categories
+categories:
+  - politics
+  - technology
+  - science
+
+# Wikidata classes
+wikidata_classes:
+  - Q198       # war
+  - Q831663    # military operation
+  - Q180684    # conflict
+  - Q719456    # international crisis
+  - Q124757    # coup d'état
+  - Q8065      # revolution
+  - Q5916      # spaceflight
+  - Q1194970   # space mission
+
+# Part of Cold War
+part_of: Q8683
+
+# Thresholds
+era_threshold_years: 10
+period_threshold_days: 30
+
+# Importance boosts
+importance_boosts:
+  Q47783: landmark    # Cuban Missile Crisis
+  Q6034: landmark     # Korean War
+  Q8740: landmark     # Vietnam War
+  Q15180: landmark    # Soviet invasion of Afghanistan
+  Q41614: landmark    # Berlin Wall

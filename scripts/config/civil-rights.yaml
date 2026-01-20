@@ -1,0 +1,48 @@
+# ═══════════════════════════════════════════════════════════════════════════
+# CIVIL RIGHTS MOVEMENTS
+# Civil rights, social justice, and liberation movements worldwide
+# ═══════════════════════════════════════════════════════════════════════════
+
+name: civil-rights
+description: Civil rights movements and social justice milestones worldwide (1950-2025)
+
+# Time range
+start_year: 1950
+end_year: 2025
+
+# Event limits
+max_events: 200
+min_sitelinks: 20
+
+# Categories
+categories:
+  - politics
+  - culture
+
+# Wikidata classes
+wikidata_classes:
+  - Q8065      # revolution
+  - Q1656682   # political event
+  - Q3024240   # historical event
+  - Q61509     # genocide (for context)
+  - Q180684    # conflict
+
+# Thresholds
+era_threshold_years: 8
+period_threshold_days: 30
+
+# Keywords to filter results (applied in post-processing)
+keywords:
+  - civil rights
+  - apartheid
+  - segregation
+  - suffrage
+  - liberation
+  - independence
+  - freedom
+
+# Importance boosts
+importance_boosts:
+  Q131017: landmark   # Martin Luther King Jr assassination
+  Q192811: landmark   # March on Washington
+  Q25324: landmark    # Apartheid in South Africa

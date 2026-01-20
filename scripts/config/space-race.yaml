@@ -1,0 +1,36 @@
+# Space Race - Space exploration milestones
+
+name: space-race
+description: Space exploration milestones and missions (1957-2025)
+
+start_year: 1955
+end_year: 2025
+max_events: 100
+min_sitelinks: 15
+
+categories:
+  - science
+  - technology
+
+query_mode: keyword
+keywords:
+  - apollo mission
+  - space shuttle
+  - sputnik
+  - mars rover
+  - moon landing
+  - international space station
+
+exclude_keywords:
+  - album
+  - film
+  - video game
+  - novel
+  - song
+
+era_threshold_years: 15
+period_threshold_days: 30
+
+importance_boosts:
+  Q43512: landmark    # Apollo 11
+  Q186285: landmark   # Sputnik 1

@@ -1,0 +1,46 @@
+# Broad Modern History - Major world events 1900-2025
+
+name: broad-modern-history
+description: Major world events across politics, science, culture, and technology (1900-2025)
+
+start_year: 1900
+end_year: 2025
+max_events: 200
+min_sitelinks: 30
+
+categories:
+  - politics
+  - science
+  - culture
+  - technology
+
+# Query by event types
+query_mode: simple
+event_types:
+  - Q178561   # battle
+  - Q198      # war
+  - Q8065     # revolution
+  - Q131569   # treaty
+  - Q2001676  # terrorist attack
+  - Q124757   # coup d'état
+  - Q1190554  # occurrence/event
+  - Q180684   # conflict
+
+exclude_keywords:
+  - album
+  - film
+  - novel
+  - season
+  - championship
+  - cup
+  - league
+  - video game
+
+era_threshold_years: 10
+period_threshold_days: 60
+
+importance_boosts:
+  Q362: landmark     # WW2
+  Q361: landmark     # WW1
+  Q8683: landmark    # Cold War
+  Q11750: landmark   # 9/11
